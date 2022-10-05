@@ -23,16 +23,36 @@
     display: inline;
 }
 
-.navbar-item {
+.navbar-nav {
     display: inline;
     float: right;
     font-size: 18px;
+
+}
+
+.navbar-item {
+    display: inline;
     padding: 10px 10px 10px 10px;
 }
 
 .navbar-item-a {
-    display: inline-block;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
+    display: inline;
+    padding: 5px 10px 5px 10px;
     color: #efefef;
+}
+
+.navbar-item-a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-button {
+    background: #A1FFCE;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 20%;
+    font-size: 1em;
+    color: black;
 }
