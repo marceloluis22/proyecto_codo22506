@@ -1,0 +1,155 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #348F50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+
+.navbar-item a {
+    color: #fff;
+}
+
+/* LOGO */
+.navbar-logo {
+    border-radius: 25px;
+    box-shadow: 3px 3px 0px #355c7d;
+}
+
+/* NAVBAR navbar-menu */
+.navbar-menu {
+    display: flex;
+    gap: 1em;
+    font-size: 25px;
+}
+
+.navbar-menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.navbar-menu li {
+    padding: 5px 14px;
+}
+
+.info {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px #355c7d;
+}
+
+.drop-menu {
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 10%;
+    top: 1.7em;
+}
+
+.drop-menu li+li {
+    margin-top: 10px;
+}
+
+.drop-menu li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.drop-menu li:hover {
+    background-color: #67be8e;
+    border-radius: 20%;
+    transition: 0.5s;
+}
+
+.info:hover .drop-menu {
+    display: block;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+.burguer-menu {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        background: #11998e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .navbar-menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.6s ease;
+    }
+
+    .navbar-menu li+li {
+        top: auto;
+    }
+
+    input[type=checkbox]:checked~.navbar-menu {
+        display: block;
+    }
+
+    .burguer-menu {
+        display: block;
+    }
+
+    .drop-menu {
+        display: none;
+        position: relative;
+
+    }
+
+    .drop-menu li:hover {
+        background-color: #4c9e9e;
+    }
+}
