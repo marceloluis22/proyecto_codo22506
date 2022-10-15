@@ -4,30 +4,24 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
-    background: #F7F8F8;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ACBB78, #F7F8F8);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ACBB78, #F7F8F8);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
+
+body {
+    font-family: sans-serif;
 }
 
 .navbar {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
     background: #348F50;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
@@ -134,19 +128,28 @@ footer {
 
 
 @media (max-width: 768px) {
+
     .navbar-menu {
         display: none;
         position: absolute;
+        right: 0px;
+        left: 8em;
+        top: 3.5em;
+        text-align: center;
         background: #11998e;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #38ef7d, #11998e);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        right: 0;
-        left: 0;
+    }
+
+    .title-navbar {
         text-align: center;
-        padding: 30px;
+        padding: 20px;
+        font-size: 2.5em;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
     }
 
     .navbar-menu li:hover {
@@ -170,11 +173,15 @@ footer {
     .drop-menu {
         display: none;
         position: relative;
-
+        text-align: center;
+        top: 0.1em;
+        right: 13px;
+        border-radius: 15;
     }
 
     .drop-menu li:hover {
         background-color: #4c9e9e;
+        text-align: center;
     }
 
     .footer {
