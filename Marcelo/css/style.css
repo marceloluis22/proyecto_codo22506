@@ -16,6 +16,7 @@ a {
     font-family: 'Courier New', Courier, monospace;
 }
 
+
 .navbar {
     display: flex;
     align-items: center;
@@ -131,17 +132,99 @@ footer {
 }
 
 .redes-footer {
-    text-align: left;
-    font-size: 50px;
+    text-align: center;
+    font-size: 45px;
     bottom: 0;
 }
 
 .copyright-footer {
-    font-size: 2em;
-    text-align: right;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
+
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        right: 0px;
+        left: 8em;
+        top: 3.5em;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        background: #11998e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .title-navbar {
+        display: flex;
+        text-align: left;
+        font-size: 2.2em;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .navbar-menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.6s ease;
+    }
+
+    .navbar-menu li+li {
+        top: auto;
+    }
+
+    input[type=checkbox]:checked~.navbar-menu {
+        display: block;
+    }
+
+    .burguer-menu {
+        display: block;
+    }
+
+    .drop-menu {
+        display: none;
+        position: relative;
+        text-align: center;
+        top: 0.1em;
+        right: 13px;
+        border-radius: 15;
+    }
+
+    .drop-menu li:hover {
+        background-color: #4c9e9e;
+        text-align: center;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .logo-footer {
+        display: none;
+        text-align: left;
+        bottom: 4em;
+    }
+
+    .redes-footer {
+        text-align: center;
+        font-size: 40px;
+        bottom: 0;
+    }
+
+    .copyright-footer {
+        font-size: 1em;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
 
     .navbar-menu {
         display: none;
