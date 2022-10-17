@@ -158,10 +158,8 @@ footer {
     }
 
     .title-navbar {
-        text-align: center;
-        padding: 20px;
-        font-size: 2.5em;
-        position: relative;
+        text-align: left;
+        font-size: 2.2em;
         font-family: 'Courier New', Courier, monospace;
     }
 
@@ -202,4 +200,22 @@ footer {
         font-size: 15px;
         font-family: 'Courier New', Courier, monospace;
     }
+
+    .logo-footer {
+        display: none;
+        text-align: left;
+        bottom: 4em;
+    }
+
+    .redes-footer {
+        text-align: center;
+        font-size: 40px;
+        bottom: 0;
+    }
+
+    .copyright-footer {
+        font-size: 1em;
+        text-align: center;
+    }
+
 }
