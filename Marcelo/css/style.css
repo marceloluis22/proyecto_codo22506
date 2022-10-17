@@ -12,15 +12,15 @@ a {
     text-decoration: none;
 }
 
-
-body {
-    font-family: sans-serif;
+.container {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .navbar {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
     padding: 5px;
     background: #348F50;
     /* fallback for old browsers */
@@ -117,15 +117,27 @@ footer {
     background: linear-gradient(to right, #56B4D3, #348F50);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #a7a7a7;
-    font-size: 30px;
-    position: absolute;
     bottom: 0;
+    position: absolute;
     width: 100%;
     color: white;
-    text-align: center;
 }
 
+.logo-footer {
+    text-align: left;
+    bottom: 4em;
+}
 
+.redes-footer {
+    text-align: center;
+    font-size: 50px;
+    bottom: 0;
+}
+
+.copyright-footer {
+    font-size: 2em;
+    text-align: right;
+}
 
 @media (max-width: 768px) {
 
@@ -136,6 +148,7 @@ footer {
         left: 8em;
         top: 3.5em;
         text-align: center;
+        font-family: 'Courier New', Courier, monospace;
         background: #11998e;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
@@ -186,5 +199,7 @@ footer {
 
     .footer {
         grid-template-columns: 1fr;
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
     }
 }
