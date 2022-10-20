@@ -14,13 +14,15 @@ a {
 
 .container {
     font-family: 'Permanent Marker', cursive;
+    background: url(/Marcelo/images/backG2.jpg) center center fixed;
+    background-size: auto;
+    background-position: center;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Permanent Marker', cursive;
     padding: 5px;
     background: #348F50;
     /* fallback for old browsers */
@@ -46,7 +48,7 @@ a {
 
 .navbar-menu {
     display: flex;
-    gap: 1em;
+    gap: 0.7em;
     font-size: 25px;
 }
 
@@ -115,7 +117,6 @@ input[type=checkbox] {
 
 .youtube-title {
     text-align: center;
-    font-family: 'Permanent Marker', cursive;
     font-size: 1em;
 }
 
@@ -190,7 +191,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-family: 'Courier New', Courier, monospace;
         padding: 5px;
         background: #348F50;
         /* fallback for old browsers */
@@ -343,6 +343,9 @@ footer {
 
 @media (max-width: 768px) {
 
+    /*        Inicio NAVBAR @media 768px               */
+    /*                                                 */
+
     .navbar-menu {
         display: none;
         position: absolute;
@@ -350,7 +353,6 @@ footer {
         left: 8em;
         top: 3.5em;
         text-align: center;
-        font-family: 'Courier New', Courier, monospace;
         background: #11998e;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
@@ -363,7 +365,6 @@ footer {
         display: flex;
         text-align: left;
         font-size: 2.2em;
-        font-family: 'Courier New', Courier, monospace;
     }
 
     .navbar-menu li:hover {
@@ -398,6 +399,8 @@ footer {
         text-align: center;
     }
 
+    /*        fin NAVBAR media 768px             */
+    /*                                           */
     .aside-container {
         display: flex;
         padding-top: 42em;
@@ -411,7 +414,6 @@ footer {
     .footer {
         grid-template-columns: 1fr;
         font-size: 15px;
-        font-family: 'Courier New', Courier, monospace;
     }
 
     .logo-footer {
@@ -435,6 +437,16 @@ footer {
 
 @media (max-width: 576px) {
 
+    .container {
+        font-family: 'Permanent Marker', cursive;
+        background: url(/Marcelo/images/backg576px.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-size: 100%;
+    }
+
+    /*        Inicio NAVBAR @media 576px               */
+    /*                                                 */
+
     .navbar-menu {
         display: none;
         position: absolute;
@@ -442,7 +454,6 @@ footer {
         left: 8em;
         top: 3.5em;
         text-align: center;
-        font-family: 'Courier New', Courier, monospace;
         background: #11998e;
         /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
@@ -455,7 +466,6 @@ footer {
         display: flex;
         text-align: left;
         font-size: 2.2em;
-        font-family: 'Courier New', Courier, monospace;
     }
 
     .navbar-menu li:hover {
@@ -490,26 +500,36 @@ footer {
         text-align: center;
     }
 
+
+    /*        Fin NAVBAR @media 576px               */
+    /*                                                */
+
     .aside-container {
+        display: none;
+    }
+
+    .youtube-title {
+        display: none;
+    }
+
+    .youtube-main {
         display: none;
     }
 
     .footer {
         grid-template-columns: 1fr;
         font-size: 15px;
-        font-family: 'Courier New', Courier, monospace;
+        bottom: 0;
     }
 
     .logo-footer {
         display: none;
         text-align: left;
-        bottom: 4em;
     }
 
     .redes-footer {
         text-align: center;
         font-size: 40px;
-        bottom: 0;
     }
 
     .copyright-footer {
