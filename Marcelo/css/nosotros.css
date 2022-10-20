@@ -15,11 +15,9 @@ a {
 .container {
     font-family: 'Permanent Marker', cursive;
     background: url(/Marcelo/images/backG2.jpg) center center fixed;
-    background-size: auto;
-    background-position: center;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
 }
 
 .navbar {
@@ -165,7 +163,7 @@ input[type=checkbox] {
     font-size: 23px;
 }
 
-footer {
+.footer {
     background: #348F50;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
@@ -175,14 +173,12 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: #fff;
-    border-radius: 5% 5%;
 }
 
 .redes-footer {
     text-align: center;
     font-size: 2em;
-    bottom: 0;
+
 }
 
 .copyright-footer {
