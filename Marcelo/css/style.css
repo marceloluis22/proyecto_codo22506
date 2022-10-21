@@ -15,8 +15,6 @@ a {
 .container {
     font-family: 'Permanent Marker', cursive;
     background: url(/Marcelo/images/backG2.jpg) center center fixed;
-    background-size: auto;
-    background-position: center;
     position: relative;
     min-height: 100vh;
     padding-bottom: 5em;
@@ -83,7 +81,8 @@ a {
     position: absolute;
     display: none;
     border-radius: 10%;
-    top: 1.7em;
+    z-index: 1;
+    top: 1.8em;
 }
 
 .drop-menu li+li {
@@ -117,6 +116,10 @@ input[type=checkbox] {
     display: none;
     font-size: 24px;
     user-select: none;
+}
+
+.youtube-container {
+    z-index: 0;
 }
 
 .youtube-title {
@@ -175,14 +178,11 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    color: #fff;
-    border-radius: 5% 5%;
 }
 
 .redes-footer {
     text-align: center;
     font-size: 2em;
-    bottom: 0;
 }
 
 .copyright-footer {
