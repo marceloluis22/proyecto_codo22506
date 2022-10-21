@@ -14,7 +14,7 @@ a {
 
 .container {
     font-family: 'Permanent Marker', cursive;
-    background: url(/Marcelo/images/backG2.jpg) center center fixed;
+    background: url(../images/backG2.jpg) center center fixed;
     background-size: auto;
     background-position: center;
     position: relative;
@@ -449,7 +449,7 @@ footer {
 
     .container {
         font-family: 'Permanent Marker', cursive;
-        background: url(/Marcelo/images/backg576px.jpg) no-repeat center center fixed;
+        background: url(../images/backg576px.jpg) no-repeat center center fixed;
         background-size: cover;
         background-size: 100%;
     }
@@ -553,7 +553,7 @@ footer {
 @media (max-width: 390px) {
     .container {
         font-family: 'Permanent Marker', cursive;
-        background: url(/Marcelo/images/backg576px.jpg) no-repeat center center fixed;
+        background: url(../images/backg576px.jpg) no-repeat center center fixed;
         background-size: cover;
         background-size: 100%;
     }
