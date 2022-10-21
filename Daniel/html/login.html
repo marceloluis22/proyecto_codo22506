@@ -6,27 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/formularios.css">
-    <title>Registrarse</title>
+    <title>Login</title>
 </head>
   <body>
     <section class="form-login">
-      <h5>Registrarse</h5>
-      <input class="control" type="text" name="nombre" id="nombre" value="" placeholder="Nombre">
-      <input class="control" type="text" name="apellido" id="apellido" value="" placeholder="Apellido">
-
-      <input class="control" type="text" name="mail" id="mail" value="" placeholder="email@algo.com">
-      <input class="control" type="text" name="tel" id="tel" value="" placeholder="Cel - 22112345678">
-    
+      <h5>Login</h5>
       <input class="control" type="text" name="usuario" id="usuario" value="" placeholder="Usuario">
-
       <input class="control" type="password" name="clave" id="clave" value="" placeholder="Contraseña">
-    
-      <input class="buttons" onClick="registro()" type="submit" name="registro" id="registro" value="Registrarse">
+      <input class="buttons" onClick="login()" type="submit" name="ingresar" id="ingresar" value="Ingresar">
       <p><a href="../html/recPass.html">¿Olvidaste tu Contraseña?</a></p>
       <p id="warnings"></p>
     </section>
-    <script src="../js/validaRegistro.js"></script>
-    
+    <script src="../js/validaLogin.js"></script>
 
   </body>
 </html>
