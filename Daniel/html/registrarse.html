@@ -50,15 +50,21 @@
 <div class="form-login">
     <section >
       <h5>Registrarse</h5>
-      <input class="control" type="text" name="nombre" id="nombre" value="" placeholder="Nombre">
-      <input class="control" type="text" name="apellido" id="apellido" value="" placeholder="Apellido">
-
-      <input class="control" type="text" name="mail" id="mail" value="" placeholder="email@algo.com">
-      <input class="control" type="text" name="tel" id="tel" value="" placeholder="Cel - 22112345678">
-    
-      <input class="control" type="text" name="usuario" id="usuario" value="" placeholder="Usuario">
-
-      <input class="control" type="password" name="clave" id="clave" value="" placeholder="Contraseña">
+      <abbr title="Los nombres solo admiten letras y deben comenzar con mayusculas">
+        <input class="control" type="text" name="nombre" id="nombre" value="" placeholder="Nombre"></abbr>
+      
+      <abbr title="Los apellidos solo admiten letras y deben comenzar con mayusculas">
+        <input class="control" type="text" name="apellido" id="apellido" value="" placeholder="Apellido"></abbr>
+           
+      <abbr title="Solo son validos correo electronicos">
+        <input class="control" type="text" name="mail" id="mail" value="" placeholder="email@algo.com"></abbr>
+      <abbr title="La telefono solo puede contener números (11)">
+        <input class="control" type="text" name="tel" id="tel" value="" placeholder="Cel - 22112345678"></abbr>
+      
+      <abbr title="Usuarios debe contener solo caracteres Alfanumericos">
+        <input class="control" type="text" name="usuario" id="usuario" value="" placeholder="Usuario"></abbr>
+      <abbr title="La contraseñas deben contener Mayusculas, Minusculas, Numero y Simbolos y un minimo de 8 caracteres">
+        <input class="control" type="password" name="clave" id="clave" value="" placeholder="Contraseña">
     
       <input class="buttons" onClick="registro()" type="submit" name="registro" id="registro" value="Registrarse">
       <p><a href="../html/recPass.html">¿Olvidaste tu Contraseña?</a></p>
