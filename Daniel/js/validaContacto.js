@@ -11,7 +11,7 @@ let entrar = true
 function contacto() {
     let mensaje = ""
     if (!checkNommbre(nombre.value)) {
-        mensaje = mensaje + `El nombre no es valido <br>`
+        mensaje = mensaje + `El nombre no es valido / `
         nombre.setAttribute('style', 'border-left: 4px solid #ff0000');
         nombre.focus();
         entrar = false;
@@ -24,7 +24,7 @@ function contacto() {
 
 
     if (!checkApellido(apellido.value)) {
-        mensaje = mensaje + `El apellido no es valido <br>`
+        mensaje = mensaje + `El apellido no es valido / `
         apellido.setAttribute('style', 'border-left: 4px solid #ff0000');
         apellido.focus();
         entrar = (entrar && false);
@@ -37,7 +37,7 @@ function contacto() {
 
 
     if (!checkMail(email.value)) {
-        mensaje = mensaje + `El mail no es valido <br>`
+        mensaje = mensaje + `El mail no es valido / `
         email.setAttribute('style', 'border-left: 4px solid #ff0000');
         email.focus();
         entrar = (entrar && false);

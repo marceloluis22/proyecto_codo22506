@@ -11,7 +11,7 @@ let entrar = true
 function registro() {
     let mensaje = ""
     if (!checkNommbre(nombre.value)) {
-        mensaje = mensaje + `El nombre no es valido <br>`
+        mensaje = mensaje + `El nombre no es valido /`
         nombre.setAttribute('style', 'border-left: 4px solid #ff0000');
         nombre.focus();
         entrar = false;
@@ -24,7 +24,7 @@ function registro() {
 
 
     if (!checkApellido(apellido.value)) {
-        mensaje = mensaje + `El apellido no es valido <br>`
+        mensaje = mensaje + `El apellido no es valido /`
         apellido.setAttribute('style', 'border-left: 4px solid #ff0000');
         apellido.focus();
         entrar = (entrar && false);
@@ -36,7 +36,7 @@ function registro() {
         }
 
     if (!checkPassword(clave.value)) {
-        mensaje = mensaje + `La clave no es valida <br>`
+        mensaje = mensaje + `La clave no es valida /`
         clave.setAttribute('style', 'border-left: 4px solid #ff0000');
         clave.focus();
         entrar = (entrar && false);
@@ -48,7 +48,7 @@ function registro() {
         }    
 
     if (!checkUsuario(usuario.value)) {
-        mensaje = mensaje + `El Usuario no es valido <br>`
+        mensaje = mensaje + `El Usuario no es valido /`
         usuario.setAttribute('style', 'border-left: 4px solid #ff0000');
         usuario.focus();
         entrar = (entrar && false);
@@ -60,7 +60,7 @@ function registro() {
         }    
 
     if (!checkMail(email.value)) {
-        mensaje = mensaje + `El mail no es valido <br>`
+        mensaje = mensaje + `El mail no es valido /`
         email.setAttribute('style', 'border-left: 4px solid #ff0000');
         email.focus();
         entrar = (entrar && false);
@@ -72,7 +72,7 @@ function registro() {
         } 
         
     if (!checkTelefono(tel.value)) {
-        mensaje = mensaje + `El telefono no es valido <br>`
+        mensaje = mensaje + `El telefono no es valido /`
         tel.setAttribute('style', 'border-left: 4px solid #ff0000');
         tel.focus();
         entrar = (entrar && false);
