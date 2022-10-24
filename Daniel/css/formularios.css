@@ -7,18 +7,49 @@
 body {
   font-family: arial;
   margin: auto; 
-  padding: 10% 10%;
-  background: rgb(153,237,205);
-  background: linear-gradient(90deg, rgba(153,237,205,1) 0%, rgba(7,230,144,1) 12%, rgba(6,97,62,1) 100%);
+  background: url(../images/backG2.jpg) center center fixed;
+  /* padding: 10% 10%; */
+  /* background: rgb(153,237,205);
+  background: linear-gradient(90deg, rgba(153,237,205,1) 0%, rgba(7,230,144,1) 12%, rgba(6,97,62,1) 100%); */
   
 }
+/* .container {
+  font-family: 'Permanent Marker', cursive;
+  background: url(../images/back1.jpg) center center fixed;
+  position: relative;
+  min-height: 100vh; 
+  padding-bottom: 5em; 
+  
+  background: rgb(153,237,205);
+  background: linear-gradient(90deg, rgba(153,237,205,1) 0%, rgba(7,230,144,1) 12%, rgba(6,97,62,1) 100%);
+} */
+
+.wrap{
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  background: linear-gradient(to bottom, rgb(0 0 0 / .5),rgb(0 0 0 / .5)),url(../images/back1.jpg);
+  background-size: cover;
+  background-position: center;
+  }
+  
+  .wrap-texto{
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  }
 
 .form-login {
+  
   display: grid;
+  max-width: 800px;
   background: #2f4132;
   margin: auto;
   box-shadow: 40px 30px 40px #000;
   padding: 20px 30px;
+  
   border-top: 4px solid #07e690;
   color: white;
 }
@@ -28,7 +59,7 @@ body {
   text-align: center;
   height: 40px;
   margin-bottom: 30px;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
   font-size: 20px;
 }
 
@@ -69,7 +100,7 @@ body {
 .form-login p{
   height: 40px;
   text-align: center;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 
 .form-login a {

@@ -8,7 +8,7 @@ function recPass() {
     let mensaje = ""
     
     if (!checkMail(email.value)) {
-        mensaje = mensaje + `El mail no es valido <br>`
+        mensaje = mensaje + `El mail no es valido / `
         email.setAttribute('style', 'border-left: 4px solid #ff0000');
         email.focus();
         entrar = (entrar && false);
@@ -20,7 +20,7 @@ function recPass() {
         } 
         
     if (!checkTelefono(tel.value)) {
-        mensaje = mensaje + `El telefono no es valido <br>`
+        mensaje = mensaje + `El telefono no es valido / `
         tel.setAttribute('style', 'border-left: 4px solid #ff0000');
         tel.focus();
         entrar = (entrar && false);

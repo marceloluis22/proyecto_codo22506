@@ -8,25 +8,23 @@ function login() {
     let mensaje = ""
 
     if (!checkPassword(clave.value)) {
-        mensaje = mensaje + `La clave no es valida <br>`
+        mensaje = mensaje + `La clave no es valida / `
         clave.setAttribute('style', 'border-left: 4px solid #ff0000');
         clave.focus();
         entrar = (entrar && false);
     }
         else {
-            mensaje = mensaje + ``
             clave.setAttribute('style', 'border-left: 4px solid #07e690');
             entrar = (entrar && true);
         }    
 
     if (!checkUsuario(usuario.value)) {
-        mensaje = mensaje + `El Usuario no es valido <br>`
+        mensaje = mensaje + `El Usuario no es valido /`
         usuario.setAttribute('style', 'border-left: 4px solid #ff0000');
         usuario.focus();
         entrar = (entrar && false);
     }
         else {
-            mensaje = mensaje + ``
             usuario.setAttribute('style', 'border-left: 4px solid #07e690');
             entrar = (entrar && true);
         }    
@@ -35,7 +33,7 @@ function login() {
     if(!entrar){
         parrafo.innerHTML = `` + mensaje
     }else{
-        parrafo.innerHTML = `Enviado... <br>`
+        parrafo.innerHTML = `Enviado... <br>`+entrar;
     }
   
 }
