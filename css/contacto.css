@@ -687,6 +687,10 @@ footer {
         display: block;
     }
 
+    #menu-opcional {
+        display: block;
+    }
+
     .drop-menu {
         display: none;
         right: 8em;
