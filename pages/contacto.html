@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" type="image/x-icon" href="../images/iconos/icono1.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://example.com/fontawesome/v6.2.0/js/all.js" data-auto-replace-svg></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>La Plata - Recicla</title>
+</head>
+
+<body class="container">
+    <nav class="navbar">
+        <a class="navbar-logo" href="../index.html">
+            <img src="../images/iconos/icono3.ico" alt="Reciclaje" width="75px;" />
+        </a>
+        <h1 class="title-navbar">Contacto</h1>
+        <ul class="navbar-item">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="burguer-menu">&#9776;</label>
+            <div class="navbar-menu">
+                <li class="info">
+                    <a href="#">Novedades</a>
+                    <ul class="drop-menu">
+                        <li><a href="..pages/noticias.html">Noticias</a></li>
+                        <li><a href="../pages/videos.html">Videos</a></li>
+                    </ul>
+                </li>
+                <li class="info" id="menu-opcional">
+                    <a href="#">Info</a>
+                    <ul class="drop-menu">
+                        <li><a href="../pages/puntosVerdes.html">¿Qué puede reciclarse?</a></li>
+                        <li><a href="../pages/reciclo.html">Como Reciclo?</a></li>
+                        <li><a href="../pages/materiales.html">¿Qué puede reutilizar?</a></li>
+                    </ul>
+                </li>
+                <li class="info"><a href="../pages/nosotros.html">Nosotros</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="form-login">
+        <section id="form">
+            <h5>Formulario de contacto</h5>
+            <abbr title="Los nombres solo admiten letras y deben comenzar con mayusculas">
+                <input class="control" type="text" name="nombre" id="nombre" value="" placeholder="Nombre"></abbr>
+
+            <abbr title="Los apellidos solo admiten letras y deben comenzar con mayusculas">
+                <input class="control" type="text" name="apellido" id="apellido" value="" placeholder="Apellido"></abbr>
+
+            <abbr title="Solo son validos correo electronicos">
+                <input class="control" type="text" name="mail" id="mail" value="" placeholder="email@algo.com"></abbr>
+            <abbr title="La telefono solo puede contener números (11)">
+                <input class="control" type="text" name="tel" id="tel" value="" placeholder="Cel - 22112345678"></abbr>
+
+            <textarea class="control" cols="40" rows="5" type="text" name="motivo" id="motivo" value=""
+                placeholder="Motivo de su consulta..."></textarea>
+            <input class="buttons" onClick="contacto()" type="submit" name="enviar" id="enviar" value="Enviar">
+            <p></p>
+            <div class="wrap">
+                <div class="wrap-texto">
+                    <h4>Errores</h4>
+                    <p id="warnings"></p>
+                </div>
+            </div>
+        </section>
+        <script src="../js/validaContacto.js"></script>
+    </div>
+    <footer class="footer">
+        <div class="copyright-footer">
+            <p>Copyright &copy; 2022 La Plata Recicla</p>
+        </div>
+    </footer>
+</body>
+
+</html>
