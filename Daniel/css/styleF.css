@@ -16,7 +16,7 @@ a {
     font-family: 'Permanent Marker', cursive;
     background: url(../images/backG2.jpg) center center fixed;
     position: relative;
-    /* min-height: 100vh; */
+    min-height: 100vh;
     padding-bottom: 5em;
 }
 

@@ -51,8 +51,12 @@
   <div class="form-login">
     <section >
       <h5>Login</h5>
-      <input class="control" type="text" name="usuario" id="usuario" value="" placeholder="Usuario">
-      <input class="control" type="password" name="clave" id="clave" value="" placeholder="Contraseña">
+      <abbr title="Usuarios debe contener solo caracteres Alfanumericos">
+        <input class="control" type="text" name="usuario" id="usuario" value="" placeholder="Usuario"></abbr>
+      <abbr title="La contraseñas deben contener Mayusculas, Minusculas, Numero y Simbolos y un minimo de 8 caracteres">
+        <input class="control" type="password" name="clave" id="clave" value="" placeholder="Contraseña"></abbr>
+
+
       <input class="buttons" onClick="login()" type="submit" name="ingresar" id="ingresar" value="Ingresar">
       <p><a href="../html/recPass.html">¿Olvidaste tu Contraseña?</a></p>
       <p></p>
