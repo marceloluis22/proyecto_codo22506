@@ -13,12 +13,12 @@ a {
 }
 
 .container {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Arial', cursive;
     background: url(../images/backG2.jpg) center center fixed;
     background-size: auto;
     background-position: center;
     position: relative;
-    min-height: 100vh;
+    min-height: 0vh;
     padding-bottom: 5em;
 }
 
@@ -182,7 +182,7 @@ input[type=checkbox] {
 .wrap-texto {
     color: #fff;
     text-align: center;
-    width: 90%;
+    width: 100%;
 }
 
 .form-login {

@@ -47,19 +47,20 @@
   <div class="form-login">
     <section id="form">
       <h5>Formulario para Recuperar password</h5>
-      <abbr title="Solo son validos correo electronicos">
+      <abbr title="Solo son válidos correos electrónicos">
         <input class="control" type="text" name="mail" id="mail" value="" placeholder="email@algo.com"></abbr>
-      <abbr title="La telefono solo puede contener números (11)">
+      <abbr title="El teléfono solo puede contener números (11)">
         <input class="control" type="text" name="tel" id="tel" value="" placeholder="Cel - 22112345678"></abbr>
       <input class="buttons" onClick="recPass()" type="submit" name="enviar" id="enviar" value="Enviar">
       <p></p>
     </section>
     <div class="wrap">
       <div class="wrap-texto">
-        <h4>Errores</h4>
+        <h4>Resultado de validación</h4>
         <p id="warnings"></p>
       </div>
     </div>
+  </div>
     <script src="../js/validaRecPass.js"></script>
     <footer class="footer">
       <div class="copyright-footer">
