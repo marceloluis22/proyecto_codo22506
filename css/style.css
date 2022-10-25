@@ -61,7 +61,7 @@ a {
 }
 
 .navbar-menu li {
-    padding: 5px 14px;
+    padding: 5px 40px;
 }
 
 .info {
@@ -86,12 +86,12 @@ a {
 }
 
 .drop-menu li+li {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .drop-menu li {
-    padding: 0.5em 1em;
-    width: 8em;
+    padding: 0.5em 1em 0.5em;
+    width: 7em;
     text-align: center;
 }
 
@@ -146,6 +146,11 @@ input[type=checkbox] {
 .imagen {
     width: 300px;
     height: 200px;
+
+}
+
+.imagen:hover {
+    filter: blur(3px);
 }
 
 .aside-imagen {

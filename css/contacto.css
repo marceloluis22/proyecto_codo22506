@@ -109,6 +109,9 @@ a {
     margin-left: -5.2em;
 }
 
+#menu-opcional {
+    display: none;
+}
 
 input[type=checkbox] {
     display: none;
@@ -659,6 +662,7 @@ footer {
         /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #38ef7d, #11998e);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        z-index: 2;
     }
 
     .title-navbar {
@@ -686,7 +690,7 @@ footer {
     .drop-menu {
         display: none;
         right: 8em;
-        z-index: 1;
+        z-index: 2;
     }
 
     .drop-menu:hover {
@@ -707,6 +711,30 @@ footer {
 
     .youtube-main {
         display: none;
+    }
+
+    .form-login {
+
+        display: block;
+        max-width: 800px;
+        background: #2f4132;
+        margin: auto;
+        box-shadow: 0px 30px 40px 0px #000;
+        padding: auto;
+        border-radius: 8%;
+        opacity: 0.92;
+        margin-top: 2em;
+        border-top: 4px solid #07e690;
+        color: white;
+    }
+
+    .form-login h5 {
+        margin: 0;
+        text-align: center;
+        height: 27px;
+        margin-bottom: 35px;
+        border-bottom: 2px solid;
+        font-size: 20px;
     }
 
     .footer {
