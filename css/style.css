@@ -282,6 +282,21 @@ footer {
     color: white;
 }
 
+#footer1:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#footer2:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#footer3:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
 .copyright-footer {
     font-size: 1.3em;
     text-align: center;
@@ -707,7 +722,7 @@ footer {
     }
 
     /*        Fin NAVBAR @media 390px               */
-    /*                                                */
+    /*                                               */
 
     .aside-container {
         display: none;
@@ -719,6 +734,10 @@ footer {
 
     .youtube-main {
         display: none;
+    }
+
+    #video-opcional {
+        display: flex;
     }
 
     .form-login {
