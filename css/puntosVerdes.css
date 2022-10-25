@@ -1,0 +1,138 @@
+#opcional {
+    display: block;
+}
+
+main {
+    position: relative;
+    box-sizing: border-box;
+    line-height: 1.5em;
+    padding-top: 1em;
+    text-align: center;
+}
+
+main>h2 {
+    font-size: 40px;
+    padding: 2em;
+}
+
+.grid-container {
+    margin: 20px 200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    /* background: #348F50; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #56B4D3, #348F50); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #56B4D3, #348F50); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    position: relative;
+}
+
+.burbuja {
+    /* background-color: #355c7d;
+    box-sizing: border-box; */
+    background: #348F50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* Color de fondo de los hijos */
+    color: #FFFF;
+    padding: 10px;
+    border: 2px solid black;
+    /* Borde de los elementos hijos */
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.primera-linea {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+
+.segunda-linea {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background:none;
+    border: none;
+}
+
+.segunda-linea img{
+    width: 900px;
+}
+
+@media (max-width: 1280px) {
+
+    main>h2 {
+        font-size: 30px;
+    }
+
+    main h3{
+        font-size: 20px;
+    } 
+
+    .grid-container {
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+    .primera-linea {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    
+    }
+    
+    .segunda-linea {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .segunda-linea img{
+        width: 500px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        background-image: none;
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+        gap: 5px;
+    }
+    .primera-linea {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    
+    }
+    
+    .segunda-linea {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .segunda-linea img{
+        width: 200px;
+    }
+
+    main>h2 {
+        font-size: 23px;
+    }
+
+    main h3{
+        font-size: 13px;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+        gap: 5px;
+    }
+    
+}
