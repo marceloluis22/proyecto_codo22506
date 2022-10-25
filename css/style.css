@@ -188,7 +188,6 @@ input[type=checkbox] {
 .wrap-texto {
     color: #fff;
     text-align: center;
-    width: 90%;
 }
 
 .form-login {
@@ -280,11 +279,13 @@ footer {
 .redes-footer {
     text-align: center;
     font-size: 2em;
+    color: white;
 }
 
 .copyright-footer {
     font-size: 1.3em;
     text-align: center;
+    color: white;
 }
 
 @media (max-width: 1280px) {
