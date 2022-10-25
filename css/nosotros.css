@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    font-family: 'Permanent Marker', cursive;
+    background: url(../images/backG2.jpg) center center fixed;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background: #348F50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border-radius: 0 0 5% 5%;
+}
+
+.navbar-item a {
+    color: #fff;
+}
+
+.navbar-logo {
+    border-radius: 25px;
+    box-shadow: 3px 3px 0px #355c7d;
+}
+
+.title-navbar {
+    display: none;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 0.7em;
+    font-size: 25px;
+}
+
+.navbar-menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.5s ease;
+}
+
+.navbar-menu li {
+    padding: 5px 14px;
+}
+
+.info {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px #355c7d;
+}
+
+.drop-menu {
+    background: #11998e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 10%;
+    z-index: 1;
+    top: 1.7em;
+}
+
+.drop-menu li+li {
+    margin-top: 10px;
+}
+
+.drop-menu li {
+    padding: 0.5em 1em;
+    width: 9em;
+    text-align: center;
+}
+
+.drop-menu li:hover {
+    background-color: #67be8e;
+    border-radius: 20%;
+    transition: 0.5s;
+}
+
+.info:hover .drop-menu {
+    display: inline;
+    position: absolute;
+    margin-left: -5.2em;
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+.burguer-menu {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.youtube-container {
+    z-index: 0;
+}
+
+.youtube-title {
+    text-align: center;
+    font-size: 1em;
+}
+
+.youtube-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+
+.aside-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 32em;
+
+}
+
+.imagen {
+    width: 300px;
+    height: 200px;
+}
+
+.aside-imagen {
+    line-height: 0;
+    overflow: hidden;
+    border-radius: 10%;
+    box-shadow: 4px 4px 0px #5482aa;
+}
+
+.aside-imagen img {
+    transition: filter 0.7s ease-in;
+    transform: scale(1.1);
+}
+
+.aside-tarjeta {
+    text-align: center;
+    padding: 8px;
+    position: relative;
+
+}
+
+.title-tarjeta {
+    font-size: 23px;
+}
+
+.footer {
+    background: #348F50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #56B4D3, #348F50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.redes-footer {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.copyright-footer {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        background: #348F50;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #56B4D3, #348F50);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #fff;
+    }
+
+    .navbar-item a {
+        color: #fff;
+    }
+
+    .navbar-logo {
+        border-radius: 25px;
+        box-shadow: 3px 3px 0px #355c7d;
+    }
+
+    .title-navbar {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: flex;
+        gap: 1em;
+        font-size: 25px;
+    }
+
+    .navbar-menu li:hover {
+        background-color: #4c9e9e;
+        border-radius: 5px;
+        transition: 0.5s ease;
+    }
+
+    .navbar-menu li {
+        padding: 5px 14px;
+    }
+
+    .info {
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 3px 3px 0px #355c7d;
+    }
+
+    .drop-menu {
+        background: #11998e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 1em 0;
+        position: absolute;
+        display: none;
+        border-radius: 10%;
+        top: 1.7em;
+    }
+
+    .drop-menu li+li {
+        margin-top: 10px;
+    }
+
+    .drop-menu li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+    }
+
+    .drop-menu li:hover {
+        background-color: #67be8e;
+        border-radius: 20%;
+        transition: 0.5s;
+    }
+
+    .info:hover .drop-menu {
+        display: block;
+    }
+
+
+    input[type=checkbox] {
+        display: none;
+    }
+
+    .burguer-menu {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+
+    .aside-container {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 32em;
+    }
+
+    .imagen {
+        width: 300px;
+        height: 200px;
+    }
+
+    .aside-imagen {
+        line-height: 0;
+        overflow: hidden;
+        border-radius: 10%;
+        box-shadow: 4px 4px 0px #5482aa;
+    }
+
+    .aside-imagen img {
+        filter: blur(0px);
+        transition: filter 0.3s ease-in;
+        transform: scale(1.1);
+    }
+
+    .aside-tarjeta {
+        text-align: center;
+        padding: 8px;
+        position: relative;
+
+    }
+
+    .title-tarjeta {
+        font-size: 23px;
+    }
+
+    footer {
+        background: #348F50;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #56B4D3, #348F50);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #a7a7a7;
+
+        width: 100%;
+        color: white;
+    }
+
+    .redes-footer {
+        text-align: center;
+        font-size: 2em;
+        bottom: 0;
+    }
+
+    .copyright-footer {
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*        Inicio NAVBAR @media 768px               */
+    /*                                                 */
+
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        right: 0px;
+        left: 8em;
+        top: 3.5em;
+        text-align: center;
+        background: #11998e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .title-navbar {
+        display: flex;
+        text-align: left;
+        font-size: 2.2em;
+    }
+
+    .navbar-menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.6s ease;
+    }
+
+    .navbar-menu li+li {
+        top: auto;
+    }
+
+    input[type=checkbox]:checked~.navbar-menu {
+        display: block;
+    }
+
+    .burguer-menu {
+        display: block;
+    }
+
+    .drop-menu {
+        display: none;
+        position: relative;
+        text-align: center;
+        top: 0.1em;
+        right: 13px;
+        border-radius: 15;
+    }
+
+    .drop-menu li:hover {
+        background-color: #4c9e9e;
+        text-align: center;
+    }
+
+    /*        fin NAVBAR media 768px             */
+    /*                                           */
+    .aside-container {
+        display: flex;
+        padding-top: 42em;
+    }
+
+    .imagen {
+        width: 200px;
+        height: 130px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        font-size: 15px;
+    }
+
+    .logo-footer {
+        display: none;
+        text-align: left;
+        bottom: 4em;
+    }
+
+    .redes-footer {
+        text-align: center;
+        font-size: 40px;
+        bottom: 0;
+    }
+
+    .copyright-footer {
+        font-size: 1em;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .container {
+        font-family: 'Permanent Marker', cursive;
+        background: url(/Marcelo/images/backg576px.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-size: 100%;
+    }
+
+    /*        Inicio NAVBAR @media 576px               */
+    /*                                                 */
+
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        right: 0px;
+        left: 8em;
+        top: 3.5em;
+        text-align: center;
+        background: #11998e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .title-navbar {
+        display: flex;
+        text-align: left;
+        font-size: 2.2em;
+    }
+
+    .navbar-menu li:hover {
+        display: inline-block;
+        background-color: #4c9e9e;
+        transition: 0.6s ease;
+    }
+
+    .navbar-menu li+li {
+        top: auto;
+    }
+
+    input[type=checkbox]:checked~.navbar-menu {
+        display: block;
+    }
+
+    .burguer-menu {
+        display: block;
+    }
+
+    .drop-menu {
+        display: none;
+        position: relative;
+        text-align: center;
+        top: 0.1em;
+        border-radius: 10%;
+        margin: 0 -4rem -4rem -4rem;
+        right: 8em;
+
+    }
+
+    .drop-menu:hover {
+        background-color: #4c9e9e;
+        text-align: center;
+    }
+
+    /*        Fin NAVBAR @media 576px               */
+    /*                                                */
+
+    .aside-container {
+        display: none;
+    }
+
+    .youtube-title {
+        display: none;
+    }
+
+    .youtube-main {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        font-size: 15px;
+        bottom: 0;
+    }
+
+    .logo-footer {
+        display: none;
+        text-align: left;
+    }
+
+    .redes-footer {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .copyright-footer {
+        font-size: 1em;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .container {
+        font-family: 'Permanent Marker', cursive;
+        background: url(/Marcelo/images/backg576px.jpg) no-repeat center center fixed;
+        background-size: cover;
+        background-size: 100%;
+    }
+
+    /*        Inicio NAVBAR @media 390px               */
+    /*                                                 */
+
+    .navbar-menu {
+        display: none;
+        position: absolute;
+        left: 8em;
+        top: 3.5em;
+        text-align: right;
+        background: #11998e;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #38ef7d, #11998e);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    .title-navbar {
+        display: flex;
+        font-size: 2.2em;
+    }
+
+    .navbar-menu li:hover {
+        background-color: #4c9e9e;
+        transition: 0.6s ease-in;
+    }
+
+    .navbar-menu li+li {
+        top: auto;
+    }
+
+    input[type=checkbox]:checked~.navbar-menu {
+        display: block;
+    }
+
+    .burguer-menu {
+        display: block;
+    }
+
+    .drop-menu {
+        display: none;
+        right: 8em;
+        z-index: 1;
+    }
+
+    .drop-menu:hover {
+        background-color: #4c9e9e;
+        text-align: center;
+    }
+
+    /*        Fin NAVBAR @media 390px               */
+    /*                                                */
+
+    .aside-container {
+        display: none;
+    }
+
+    .youtube-title {
+        display: none;
+    }
+
+    .youtube-main {
+        display: none;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        font-size: 15px;
+        bottom: 0;
+    }
+
+    .logo-footer {
+        display: none;
+        text-align: left;
+    }
+
+    .redes-footer {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .copyright-footer {
+        font-size: 1em;
+        text-align: center;
+    }
+
+}
