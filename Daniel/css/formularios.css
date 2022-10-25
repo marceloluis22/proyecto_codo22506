@@ -13,16 +13,10 @@ body {
   background: linear-gradient(90deg, rgba(153,237,205,1) 0%, rgba(7,230,144,1) 12%, rgba(6,97,62,1) 100%); */
   
 }
-/* .container {
-  font-family: 'Permanent Marker', cursive;
-  background: url(../images/back1.jpg) center center fixed;
-  position: relative;
-  min-height: 100vh; 
-  padding-bottom: 5em; 
-  
-  background: rgb(153,237,205);
-  background: linear-gradient(90deg, rgba(153,237,205,1) 0%, rgba(7,230,144,1) 12%, rgba(6,97,62,1) 100%);
-} */
+ .container {
+
+  min-height: 0vh; 
+} 
 
 .wrap{
   width: auto;
@@ -38,7 +32,7 @@ body {
   .wrap-texto{
   color: #fff;
   text-align: center;
-  width: 90%;
+  width: 100%;
   }
 
 .form-login {
@@ -96,6 +90,21 @@ body {
   color: white;
   margin-bottom: 16px;
 }
+
+/* body {
+  perspective: 800px;
+}
+
+div {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.rotated {
+  transform: rotate3d(0, 1, 0, 60deg);
+  background-color: pink;
+} */
 
 
 .form-login p{
