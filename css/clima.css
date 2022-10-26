@@ -1,0 +1,143 @@
+:root {
+    --bg_main: #07e690;
+    --text_light: #fff;
+    --text_med: #53627c;
+    --text_dark: #1e2432;
+    --red: #0a613f;
+    --darkred: #0a613f;
+    --orange: #ff8c00;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  input {
+    -webkit-appearance: none;
+  }
+
+  button,
+  input {
+    border: none;
+    background: none;
+    outline: none;
+    color: inherit;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  body {
+    font: 1rem/1.3 "Roboto", sans-serif;
+    background: var(--bg_main);
+    color: var(--text_dark);
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+
+
+  .top-banner {
+    color: var(--text_light);
+  }
+
+  .heading {
+    font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: 0.02em;
+    padding: 0 0 0 0;
+  }
+
+  .top-banner form {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .top-banner form input {
+    height: 20px;
+    padding: 2px 2px 2px;
+    border-bottom: 1px solid;
+  }
+
+  .top-banner form input::placeholder {
+    color: currentColor;
+  }
+
+  .top-banner form button {
+    font-weight: bold;
+    padding: 5px 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background: var(--red);
+    transition: background 0.3s ease-in-out;
+  }
+
+
+
+  .ajax-section {
+    margin: 5px 0 5px;
+  }
+
+  .ajax-section .cities {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .ajax-section .city {
+    position: relative;
+    padding: 10% 10%;
+    border-radius: 20px;
+    background: var(--text_light);
+    color: var(--text_med);
+  }
+
+
+  .ajax-section .city-temp {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--text_dark);
+  }
+
+  .ajax-section .city sup {
+    font-size: 0.5em;
+  }
+
+
+
+
+
+
+ 
+
+
+
+
+  /* 'https://api.openweathermap.org/data/2.5/weather?q=La plata&appid=47e8ae67849b5f99edbf9078ba4ed852&units=metric' */
