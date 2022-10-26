@@ -328,6 +328,13 @@ footer {
         box-shadow: 3px 3px 0px #355c7d;
     }
 
+    .navbar-logo img:hover {
+            transition-property: all;
+            transform: rotate(-360deg);
+            transition-duration: 1.5s;
+      
+    }
+
     .title-navbar {
         display: none;
     }
