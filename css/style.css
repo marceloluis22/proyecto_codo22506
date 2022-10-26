@@ -140,7 +140,13 @@ input[type=checkbox] {
 .aside-container {
     display: flex;
     justify-content: space-around;
-    padding-top: 32em;
+    padding-top: 12em;
+}
+
+.aside-container2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
 }
 
 .imagen {
@@ -148,6 +154,15 @@ input[type=checkbox] {
     height: 200px;
 
 }
+
+.aside-tarjeta2 {
+    text-align: center;
+}
+
+.aside-tarjeta2 .imagen {
+    width: 100px;
+}
+
 
 .imagen:hover {
     -webkit-transform: rotateY(180deg);
@@ -261,6 +276,24 @@ input[type=checkbox] {
 
 .form-login a:hover {
     text-decoration: underline;
+}
+
+
+.texto-rico{
+    text-align: center;
+    margin: 50px 25px 0px 25px;
+    padding: 50px 50px 0px 50px;
+}
+.texto-rico span {
+    font-weight: bolder;
+}
+.aside-tarjeta2 span{
+    font-weight: bolder;
+}
+.aside-tarjeta2{
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: #000;
 }
 
 
@@ -398,12 +431,19 @@ footer {
         font-size: 24px;
         user-select: none;
     }
+    
+    .aside-container2 {
+        display: flex;
+        gap: 15px;
+        justify-content:center;
+    }
 
     .aside-container {
         display: flex;
         justify-content: space-around;
-        padding-top: 32em;
+        padding-top: 12em;
     }
+
 
     .imagen {
         width: 300px;
@@ -522,7 +562,7 @@ footer {
     /*                                           */
     .aside-container {
         display: flex;
-        padding-top: 42em;
+        padding-top: 22em;
     }
 
     .imagen {
@@ -628,6 +668,15 @@ footer {
     .aside-container {
         display: none;
     }
+
+    .aside-container2 {
+        display: none;
+    }
+
+    .texto-rico{
+        display: none;
+    }
+
 
     .youtube-title {
         display: none;
