@@ -113,6 +113,10 @@ a {
     display: none;
 }
 
+.menu-opcional-info {
+    display: block;
+}
+
 input[type=checkbox] {
     display: none;
 }
@@ -184,6 +188,7 @@ input[type=checkbox] {
     text-align: center;
     width: 100%;
 }
+
 
 .form-login {
 
