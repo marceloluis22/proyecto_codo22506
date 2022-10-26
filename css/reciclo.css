@@ -59,6 +59,9 @@ main div {
     .tarjetas {
         grid-template-columns: auto auto;
     }
+    .tarjeta>span>img {
+        width: 100px;
+    }
 }
 
 
@@ -81,5 +84,9 @@ main div {
     } */
     #escondible {
         display: none;
+    }
+    
+    .tarjeta>span>img {
+        width: 80px;
     }
 }
