@@ -107,6 +107,8 @@ main>h2 {
     .grid-container {
         grid-template-columns: auto;
         gap: 5px;
+        padding: 5px;
+        margin: 20px 40px; 
     }
     .primera-linea {
         grid-column-start: 1;
