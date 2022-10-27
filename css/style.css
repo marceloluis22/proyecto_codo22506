@@ -134,7 +134,18 @@ input[type=checkbox] {
 
 .youtube-title {
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
+    justify-content: center;
+    position: relative;
+    margin: 5em;
+    background-color: #67be8e;
+    opacity: 0.9;
+    box-shadow: 8px 8px #11998e;
+    border-radius: 7%
+}
+
+.youtube-title:hover {
+    filter: saturate(180%);
 }
 
 .youtube-main {
@@ -286,18 +297,21 @@ input[type=checkbox] {
 }
 
 
-.texto-rico{
+.texto-rico {
     text-align: center;
     margin: 50px 25px 0px 25px;
     padding: 50px 50px 0px 50px;
 }
+
 .texto-rico span {
     font-weight: bolder;
 }
-.aside-tarjeta2 span{
+
+.aside-tarjeta2 span {
     font-weight: bolder;
 }
-.aside-tarjeta2{
+
+.aside-tarjeta2 {
     border-radius: 50%;
     box-sizing: border-box;
     border: #000;
@@ -438,11 +452,11 @@ footer {
         font-size: 24px;
         user-select: none;
     }
-    
+
     .aside-container2 {
         display: flex;
         gap: 15px;
-        justify-content:center;
+        justify-content: center;
     }
 
     .aside-container {
@@ -680,7 +694,7 @@ footer {
         display: none;
     }
 
-    .texto-rico{
+    .texto-rico {
         display: none;
     }
 
