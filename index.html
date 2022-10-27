@@ -20,6 +20,24 @@
         <a class="navbar-logo" href="./index.html">
             <img src="./images/iconos/icono3.ico" alt="Reciclaje" />
         </a>
+        <div class="api-container" id="api-opcional">
+
+            <section class="top-banner">
+                <div>
+                    <form>
+                        <input type="text" placeholder="Ciudad?" autofocus>
+                        <button type="submit">Enviar</button>
+                        <span class="msg"></span>
+                        <section class="ajax-section">
+                            <div>
+                                <ul class="cities"></ul>
+                            </div>
+                        </section>
+                    </form>
+                </div>
+                <script src="../js/clima.js"></script>
+            </section>
+        </div>
         <h1 class="title-navbar">Reciclar</h1>
         <ul class="navbar-item">
             <input type="checkbox" id="checkbox_toggle" />

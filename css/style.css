@@ -43,6 +43,17 @@ a {
     height: 30px;
 }
 
+.api-container {
+    display: flex;
+    margin-right: auto;
+}
+
+.ajax-section .city-icon {
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+}
+
 .navbar-logo img:hover {
     transition-property: all;
     transform: rotate(-360deg);
@@ -525,10 +536,10 @@ footer {
 
     .navbar-menu {
         display: none;
-        position: absolute;
+        position: fixed;
         right: 0px;
         left: 8em;
-        top: 3.5em;
+        top: 2.2em;
         text-align: center;
         background: #11998e;
         /* fallback for old browsers */
@@ -555,6 +566,10 @@ footer {
         top: auto;
     }
 
+    #api-opcional {
+        display: none;
+    }
+
     input[type=checkbox]:checked~.navbar-menu {
         display: block;
     }
@@ -568,7 +583,7 @@ footer {
         position: relative;
         text-align: center;
         top: 0.1em;
-        right: 13px;
+        left: 10px;
         border-radius: 15;
     }
 
@@ -696,6 +711,9 @@ footer {
         display: none;
     }
 
+    #api-opcional {
+        display: none;
+    }
 
     .youtube-title {
         display: none;
@@ -752,6 +770,10 @@ footer {
         background: linear-gradient(to right, #38ef7d, #11998e);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         z-index: 2;
+    }
+
+    #api-opcional {
+        display: none;
     }
 
     .navbar-logo {
