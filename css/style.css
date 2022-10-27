@@ -40,8 +40,7 @@ a {
 }
 
 .navbar-logo {
-    border-radius: 25px;
-    box-shadow: 3px 3px 0px #355c7d;
+    height: 30px;
 }
 
 .navbar-logo img:hover {
@@ -379,7 +378,6 @@ footer {
 
     .navbar-logo {
         border-radius: 25px;
-        box-shadow: 3px 3px 0px #355c7d;
     }
 
     .title-navbar {
@@ -754,6 +752,11 @@ footer {
         background: linear-gradient(to right, #38ef7d, #11998e);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         z-index: 2;
+    }
+
+    .navbar-logo {
+        display: flex;
+        height: 70px;
     }
 
     .title-navbar {
