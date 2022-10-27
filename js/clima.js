@@ -14,13 +14,15 @@ form.addEventListener("submit", e => {
     .then(response => response.json())
     .then(data => {
       const { main, name, sys, weather } = data;
-
+      const icon = `https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${weather[0]["icon"]}.svg`;
       let li = list.firstChild;
       if ( li === null ) {
             li = document.createElement("li");
             }
       li.classList.add("city");
-      li.innerHTML = `        <div > ${Math.round(main.temp)}<sup>°C</sup></div>      `;
+      li.innerHTML = `        <div> ${Math.round(main.temp)}<sup>°C</sup>
+      <img class="city-icon" src="${icon}" alt="${weather[0]['description']}">
+        </div>      `;
       list.appendChild(li);
       
     })

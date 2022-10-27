@@ -131,7 +131,11 @@
   }
 
 
-
+  .ajax-section .city-icon {
+    margin-top: 10px;
+    width: 15px;
+    height: 15px;
+  }
 
 
 
