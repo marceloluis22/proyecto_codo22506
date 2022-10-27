@@ -15,6 +15,7 @@ main>h2 {
     padding: 2em;
 }
 
+
 .grid-container {
     margin: 20px 200px;
     display: grid;
@@ -30,6 +31,7 @@ main>h2 {
     /* border: 2px solid black; */
     border-radius: 5px;
     position: relative;
+
 }
 
 .burbuja {
@@ -60,11 +62,11 @@ main>h2 {
 .segunda-linea {
     grid-column-start: 1;
     grid-column-end: 4;
-    background:none;
+    background: none;
     border: none;
 }
 
-.segunda-linea img{
+.segunda-linea img {
     width: 900px;
 }
 
@@ -74,26 +76,27 @@ main>h2 {
         font-size: 30px;
     }
 
-    main h3{
+    main h3 {
         font-size: 20px;
-    } 
+    }
 
     .grid-container {
         grid-template-columns: auto auto;
         gap: 15px;
     }
+
     .primera-linea {
         grid-column-start: 1;
         grid-column-end: 3;
-    
+
     }
-    
+
     .segunda-linea {
         grid-column-start: 1;
         grid-column-end: 3;
     }
 
-    .segunda-linea img{
+    .segunda-linea img {
         width: 500px;
     }
 
@@ -108,20 +111,21 @@ main>h2 {
         grid-template-columns: auto;
         gap: 5px;
         padding: 5px;
-        margin: 20px 40px; 
+        margin: 20px 40px;
     }
+
     .primera-linea {
         grid-column-start: 1;
         grid-column-end: 2;
-    
+
     }
-    
+
     .segunda-linea {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-    
-    .segunda-linea img{
+
+    .segunda-linea img {
         width: 200px;
     }
 
@@ -129,12 +133,13 @@ main>h2 {
         font-size: 23px;
     }
 
-    main h3{
+    main h3 {
         font-size: 13px;
     }
+
     .grid-container {
         grid-template-columns: auto;
         gap: 5px;
     }
-    
+
 }
